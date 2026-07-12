@@ -1,4 +1,4 @@
-KDE Plasma 6 on Termux
+KDE Plasma 6 on Termux (VNC) 
 
 «A guide to installing KDE Plasma 6 natively on Termux using the official "x11-packages" repository.»
 
@@ -147,37 +147,6 @@ pkg uninstall plasma
 Remove unused dependencies:
 
 pkg autoremove
-
----
-
-Troubleshooting
-
-"startplasma-x11" not found
-
-Check which Plasma startup command is installed:
-
-which startplasma
-which startplasma-x11
-
----
-
-Black screen after launching Plasma
-
-- Make sure your X11 server or VNC server is running.
-- Verify that all Plasma dependencies are installed.
-- Check the session log for errors.
-
----
-
-KDE applications do not start
-
-Make sure:
-
-- "x11-repo" is enabled.
-- Your packages are fully updated.
-- All required Qt and KDE Frameworks packages are installed.
-
----
 
 License
 
